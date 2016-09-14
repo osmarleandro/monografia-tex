@@ -1,0 +1,350 @@
+% ----------------------------------------------------------------------- %
+% Instituto Federal do Ceará campus Crato 
+% Modelo de monografia do bacharelado em Sistemas de Informação
+% Crato, 01 Julho de 2016
+% ----------------------------------------------------------------------- %
+
+\documentclass[12pt,
+openany, % Cada capítulo na página da frente diferente do comando openany openright
+oneside, % Para impressão frente e verso(as margens das páginas ímpares diferem das margens das páginas pares ) diferente do comando  oneside twoside 
+chapter=Title, section=Title, subsection=Title, subsubsection=Title, subsubsubsection=Title,
+sumario=tradicional]{abntex2}
+
+\include{customize/customize} % Arquivo de configuracoes
+
+\titulo{TITULO DA MONOGRAFIA}
+\autor{Nome do Autor}
+\orientador[Orientador:]{Me. Nome do Orientador}
+\tipotrabalho{Monografia}
+\instituicao{IFCE}
+\local{Crato}
+\data{2016}
+
+
+\bibliographystyle{plain} % plain coloca os nomes em ordem alfabética(arquivo bib) e legenda de forma numérica
+\hyphenation{con-si-de-ra-das bi-blio-gra-fia obtenção}
+\linespread{1.5}
+\hypersetup{
+		colorlinks=true,  	% false: boxed links; true: colored links
+    	linkcolor= black,   % Cor para o sumário
+    	citecolor=black,    % Cor de links da bibliografia
+    	filecolor=magenta,  % Cor de links de arquivos
+		urlcolor=blue}
+\makeindex
+
+\begin{document}
+
+\setlength{\parindent}{1.25cm}  % Controla o tamanho do parágrafo
+\setlength{\parskip}{0.2cm} % Controla o espaçamento entre parágrafos
+\OnehalfSpacing % Espaçamento 1,5 entre as linhas
+\frenchspacing % Remove espaçamento extra entre as linhas
+\thispagestyle{empty} % Remove cabeçalhos e rodapés
+
+
+% --------------------------------- CAPA --------------------------------- %
+% ------------------------------------------------------------------------ %
+\begin{capa}	
+	\begin{figure}
+	\centering
+	\begin{minipage}{.13\linewidth}
+	  \includegraphics[scale=0.05]{img/ifce.jpg}
+	\end{minipage}
+	\begin{minipage}[c]{0.70\textwidth}
+	\begin{center} \scriptsize
+	INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA\\IFCE - CAMPUS CRATO\\[0,2cm]
+	BACHARELADO EM SISTEMAS DE INFORMAÇÃO
+	\end{center}
+	 
+	\end{minipage}
+	\begin{minipage}{.1\linewidth}
+		\includegraphics[scale=0.1]{img/logosi.png}
+	\end{minipage}
+	\end{figure}
+	
+	\ \ \ \ \ 
+	
+	\vfill
+	
+	\begin{center}
+		\bfseries \imprimirtitulo
+	\end{center}
+	
+	\ \ \ \ 
+	
+	\begin{flushright}
+		\imprimirautor 
+	\end{flushright}
+	
+	\vfill
+	
+	\begin{center}
+		\imprimirlocal, \imprimirdata
+	\end{center}
+\end{capa}
+
+\pretextual
+\pagenumbering{roman}
+
+
+% --------------------------------- FOLHA DE ROSTO --------------------------------- %
+% ---------------------------------------------------------------------------------- %
+\begin{folhaderosto}
+	
+	\begin{figure}
+	\centering
+	\begin{minipage}{.13\linewidth}
+	  \includegraphics[scale=0.05]{img/ifce.jpg}
+	\end{minipage}
+	\begin{minipage}[c]{0.70\textwidth}
+	\begin{center} \scriptsize
+	INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA\\IFCE - CAMPUS CRATO\\[0,2cm]
+	BACHARELADO EM SISTEMAS DE INFORMAÇÃO
+	\end{center}
+	 
+	\end{minipage}
+	\begin{minipage}{.1\linewidth}
+	  \includegraphics[scale=0.1]{img/logosi.png}
+	\end{minipage}
+	\end{figure}
+	
+	
+	\begin{center}
+	
+	\vspace*{\fill}\vspace*{\fill}
+	
+	\begin{center}
+	\bfseries\imprimirtitulo
+	\end{center}
+	\vspace*{\fill}
+	\hspace{.4\textwidth}
+	\begin{minipage}{.55\textwidth}
+	\SingleSpacing
+	Monografia apresentada como requisito para obtenção do título de Bacharel em Sistemas de Informação pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará campus Crato.
+	\end{minipage}
+	
+	\vspace*{\fill}
+	
+	\hspace{.4\textwidth}
+	\begin{minipage}{.55\textwidth}
+	\SingleSpacing
+	\large\imprimirorientadorRotulo~\imprimirorientador\par
+	\end{minipage}
+	\vspace*{\fill}
+	
+	{\imprimirlocal, \imprimirdata}
+	\end{center}
+\end{folhaderosto}
+
+
+% ------------------------- FICHA CATALOGRÁFICA ------------------------- %
+% ----------------------------------------------------------------------- %
+%\includepdf{FC.pdf} Ao receber escanei e salve na mesma pasta com o nome de FC e retire o cometário
+
+
+% ------------------------- FOLHA DE APROVAÇÃO ------------------------- %
+% ---------------------------------------------------------------------- %
+%\includepdf{FA.pdf}% Ao receber escanei e salve na mesma pasta com o nome de FA e retire o cometário
+
+
+% ------------------------- DEDICATÓRIA ------------------------- %
+% --------------------------------------------------------------- %
+\begin{dedicatoria}
+  \vspace*{\fill}
+   \raggedleft{
+   	
+  	\textit{"A alegria de ver e entender é o mais perfeito dom da natureza." \\
+  		Albert Einstein}
+  	
+  	~
+  }
+\end{dedicatoria}
+
+
+% ------------------------- AGRADECIMENTOS ------------------------- %
+% ----------------------------------------- ------------------------ %
+\begin{agradecimentos}
+Agradeço a Deus, pela vida maravilhosa dada a mim.
+
+\end{agradecimentos}
+
+
+% ------------------------- ÉPIGRAFE ------------------------- %
+% ------------------------------------------------------------ %
+%\begin{epigrafe}
+%\vspace*{\fill}
+%\hspace{.45\textwidth}
+    %\begin{minipage}{.5\textwidth}
+		%\textsl{c}\vspace*{\fill}
+		%\end{minipage}
+%\end{epigrafe}
+
+
+% ------------------------- RESUMO EM LÍNGUA VERNÁCULA ------------------------- %
+% ------------------------------------------------------------------------------ %
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+
+\lipsum[9]
+
+\vspace{1cm}
+
+\noindent 
+\textbf{Palavras-chave}:  
+\end{resumo}
+
+
+% ------------------------- RESUMO EM OUTRA LÍNGUA ------------------------- %
+% -------------------------------------------------------------------------- %
+
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+
+   \lipsum[9]
+ 
+   \vspace{\onelineskip}
+ 
+   \noindent 
+   \textbf{Keywords}: 
+ \end{otherlanguage*}
+\end{resumo}
+
+% ------------------------- LISTA DE FIGURAS ------------------------- %
+% -------------------------------------------------------------------- %
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+% ------------------------- LISTA DE TABELAS ------------------------- %
+% -------------------------------------------------------------------- %
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+% ------------------------- SUMÁRIO ------------------------- %
+% ----------------------------------------------------------- %
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents* % asterisco retira a pagina Sumario do sumario
+\cleardoublepage
+
+
+% ------------------------- INTRODUCAO ------------------------- %
+% -------------------------------------------------------------- %
+\textual
+\pagenumbering{arabic}
+
+\chapter[Introdução]{Introdução}
+
+\lipsum[2]
+
+\begin{figure}[h]	
+	\centering
+	Fonte: Autor (2016). \\
+	\includegraphics[scale=0.1]{img/ifce_crato.png}
+	\caption{Exemplo de figura.}
+	\label{fig:joe}
+\end{figure}
+
+\begin{table}[h]
+	\centering
+	\caption{Exemplo de tabela.}
+	\begin{tabular}{llrl}
+		\textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\ \hline
+		Texto & 		Texto & 	Texto\\
+		Texto & 		Texto & 	Texto\\
+		Texto & 		Texto & 	Texto\\
+		Texto & 		Texto & 	Texto\\
+	\end{tabular}
+	\label{table:pm}
+\end{table}
+
+Como visto na Tabela \ref{table:pm}. \lipsum[1]
+
+\begin{citacao}
+	\lipsum[1] (AUTOR, 2016, p. 01).
+\end{citacao} 
+
+\chapter{Objetivos}
+
+\lipsum[1]
+
+\section{Objetivo Geral}
+
+\lipsum[5]
+
+
+\section{Objetivos Específicos}
+
+\begin{enumerate}
+	\item Revisão bibliográfica para estabelecer o estado da arte do problema na literatura;
+	\item Desenvolver uma aplicação;
+	\item Realizar testes;
+	\item Comparar os resultados.
+\end{enumerate}
+
+
+% ------------------------- REFERENCIAL TEORICO ------------------------- %
+% ----------------------------------------------------------------------- %
+
+\chapter[Referencial Teórico]{Referencial Teórico}
+
+\lipsum
+
+% ------------------------- METODOLOGIA ------------------------- %
+% --------------------------------------------------------------- %
+\chapter[Metodologia e Implementação]{Metodologia}
+
+\lipsum
+
+
+
+% ------------------------- TESTES ------------------------- %
+% --------------------------------------------------------- %
+\chapter[Testes]{Testes}
+
+\lipsum
+
+% ------------------------- Análise de Resultados ------------------------- %
+% ------------------------------------------------------------------------- %
+\chapter[Análise de Resultados]{Análise de Resultados}
+
+\lipsum
+
+% ------------------------- CONCLUSÃO ------------------------- %
+% ------------------------------------------------------------- %
+\chapter[Conclusão]{Conclusão}
+
+\lipsum
+
+
+% ------------------------- REFERENCIAS ------------------------- %
+% --------------------------------------------------------------- %
+\postextual 
+
+\renewcommand{\bibname}{Referências Bibliográficas}
+\begin{thebibliography}{99}
+
+	\bibitem{burke2004} BURKE, E. K., KINGSTON, J. H., \& de WERRA, D. (2004d). \textbf{Applications to timetabling}. In J. Gross \& J. Yellen (Eds.), The handbook of graph theory (p. 446). London: Chapman Hall/CRC.
+	
+	
+	\bibitem{cottle2007} COTTLE, R.; JOHNSON, E.; WETS, R. {George B. Dantzig (1914-2005)}. Notices of the AMS, v. 54, n. 3, p. 344-362, 2007.
+	
+	\bibitem{dantzig1998} DANTZIG, G. B. \textbf{Linear Programming and Extensions}. New Jersey: Princeton University Press, 609p, 1963.
+	
+	\bibitem{goldbag2000} GOLDBARG, M. C.; LUNA, H. P. L. \textbf{Otimização combinatória e programação linear: modelos e algoritmos}. Editora Campus, Rio de Janeiro, Brasil, 2000.
+	
+	\bibitem{wikibooks2016} \textbf{LaTeX/Bibliography Management}. Wikibooks, 2016. Disponível em <https://en.wikibooks.org/wiki/LaTeX/Bibliography\_Management>.
+	
+	\bibitem{neukirchen2014} NEUKIRCHEN, F. V. P. et al. \textbf{Um estudo de caso sobre a geração de quadros de horários no departamento de Ciência da Computação da UFRGS}. XLIV Simpósio Brasileiro de Pesquisa Operacional, Salvador - BA, p. 3272-3279, 2014.
+	
+	\bibitem{pilotto2003} PILOTTO, Fernando Gonçalves. \textbf{Estilo BibTeX com as Normas da ABNT}. UFRGS, 2003. Disponível em <http://www.if.ufrgs.br/hadrons/abnt/abntdoc.tex>.
+	
+	\bibitem{qu2009} QU, R.; BURKE, E. K.; MCCOLLUM, B.; MERLOT, L. T. G. and LEE, S. Y. \textbf{A survey of search methodologies and automated system development for examination timetabling}. Journal of scheduling, v. 12, n. 1, p. 55-89, 2009.
+	
+	\bibitem{scherf1999} SCHAERF, A. \textbf{A survey of automated timetabling}. Artificial intelligence review, v. 13, n. 2, p. 87-127, 1999.
+	
+	\bibitem{sipser2006} SIPSER, M. \textbf{Introduction to the Theory of Computation}. 2 ed. Boston: Thomson Course Technology, 2006. 431 p. Bibliografia: p 271-276. ISBN 0-534-95097-3.
+
+	
+\end{thebibliography}
+
+\end{document}
