@@ -12,13 +12,13 @@ sumario=tradicional]{abntex2}
 
 \include{customize/customize} % Arquivo de configuracoes
 
-\titulo{TITULO DA MONOGRAFIA}
-\autor{Nome do Autor}
-\orientador[Orientador:]{Me. Nome do Orientador}
-\tipotrabalho{Monografia}
-\instituicao{IFCE}
-\local{Crato}
-\data{2016}
+\renewcommand{\titulo}{Título da Monografia}
+\renewcommand{\autor}{Nome do Autor}
+\renewcommand{\orientador}{Me. Orientador}
+\renewcommand{\tipotrabalho}{Monografia}
+\renewcommand{\instituicao}{IFCE}
+\renewcommand{\local}{Crato}
+\renewcommand{\data}{2016}
 
 
 \bibliographystyle{plain} % plain coloca os nomes em ordem alfabética(arquivo bib) e legenda de forma numérica
@@ -66,19 +66,19 @@ sumario=tradicional]{abntex2}
 	\vfill
 	
 	\begin{center}
-		\bfseries \imprimirtitulo
+		\bfseries \titulo
 	\end{center}
 	
 	\ \ \ \ 
 	
 	\begin{flushright}
-		\imprimirautor 
+		\autor 
 	\end{flushright}
 	
 	\vfill
 	
 	\begin{center}
-		\imprimirlocal, \imprimirdata
+		\local, \data
 	\end{center}
 \end{capa}
 
@@ -113,7 +113,7 @@ sumario=tradicional]{abntex2}
 	\vspace*{\fill}\vspace*{\fill}
 	
 	\begin{center}
-	\bfseries\imprimirtitulo
+	\bfseries\titulo
 	\end{center}
 	\vspace*{\fill}
 	\hspace{.4\textwidth}
@@ -127,11 +127,11 @@ sumario=tradicional]{abntex2}
 	\hspace{.4\textwidth}
 	\begin{minipage}{.55\textwidth}
 	\SingleSpacing
-	\large\imprimirorientadorRotulo~\imprimirorientador\par
+	\large Orientador: \orientador\par
 	\end{minipage}
 	\vspace*{\fill}
 	
-	{\imprimirlocal, \imprimirdata}
+	{\local, \data}
 	\end{center}
 \end{folhaderosto}
 
